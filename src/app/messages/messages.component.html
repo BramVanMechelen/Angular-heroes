@@ -1,6 +1,7 @@
 <div *ngIf="messageService.messages.length"> <!--Als dit niet nul is wordt het weergeven, anders niet!!-->
 
 <h2>Messages</h2>
+
 <button class="clear" (click)="messageService.clear()">clear</button>
 <div *ngFor='let message of messageService.messages'> {{message}}</div>
 <!--Deze div wordt herhaald voo elk bericht-->
